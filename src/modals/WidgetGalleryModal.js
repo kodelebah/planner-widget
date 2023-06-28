@@ -3,6 +3,7 @@ import ClockWidget from '../widgets/ClockWidget'
 import ReminderListWidget from '../widgets/ReminderListWidget'
 import TimerWidget from '../widgets/TimerWidget'
 import CalendarWidget from '../widgets/CalendarWidget'
+import BalanceWidget from '../widgets/BalanceWidget'
 
 export default function WidgetGalleryModal({
   setShowWidgetModal,
@@ -15,6 +16,7 @@ export default function WidgetGalleryModal({
     { component: <ReminderListWidget />, name: 'Reminder List' },
     { component: <TimerWidget />, name: 'Timer' },
     { component: <CalendarWidget />, name: 'Calendar' },
+    { component: <BalanceWidget />, name: 'Manage Your Money' },
   ])
   return (
     <div

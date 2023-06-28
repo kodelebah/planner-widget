@@ -84,7 +84,7 @@ function App() {
           widgets.map((widget, index) => {
             if (widget.area === 'none-widget') {
               return (
-                <Draggable>
+                <Draggable key={widget.id}>
                   <div style={{ padding: 10 }} className="widget-container">
                     <div style={{ marginBottom: 10 }}>
                       <select
@@ -130,7 +130,11 @@ function App() {
               widgets.map((widget, index) => {
                 if (widget.area === 'left-widget') {
                   return (
-                    <div style={{ padding: 10 }} className="widget-container">
+                    <div
+                      style={{ padding: 10 }}
+                      className="widget-container"
+                      key={widget.id}
+                    >
                       <div style={{ marginBottom: 10 }}>
                         <select
                           value={widget.area}
@@ -186,7 +190,11 @@ function App() {
               widgets.map((widget, index) => {
                 if (widget.area === 'main-widget') {
                   return (
-                    <div style={{ padding: 10 }} className="widget-container">
+                    <div
+                      style={{ padding: 10 }}
+                      className="widget-container"
+                      key={widget.id}
+                    >
                       <div style={{ marginBottom: 10 }}>
                         <select
                           value={widget.area}
@@ -240,7 +248,11 @@ function App() {
               widgets.map((widget, index) => {
                 if (widget.area === 'right-widget') {
                   return (
-                    <div style={{ padding: 10 }} className="widget-container">
+                    <div
+                      style={{ padding: 10 }}
+                      className="widget-container"
+                      key={widget.id}
+                    >
                       <div style={{ marginBottom: 10 }}>
                         <select
                           value={widget.area}
